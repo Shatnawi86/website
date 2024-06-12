@@ -3,11 +3,11 @@ document.addEventListener('DOMContentLoaded', async function() {
   const footer = document.getElementById("footer");
 
   if (header) {
-      header.innerHTML = await fetchComponent('../header.html');
+      header.innerHTML = await fetchComponent('../../header.html');
   }
 
   if (footer) {
-      footer.innerHTML = await fetchComponent('../footer.html');
+      footer.innerHTML = await fetchComponent('../../footer.html');
   }
 });
 
@@ -22,6 +22,6 @@ async function fetchComponent(url) {
       return data;
   } catch (error) {
       console.error('There was a problem with the fetch operation:', error);
-      return ''; // Return an empty string or a default fallback content
+      return ''; 
   }
 }
