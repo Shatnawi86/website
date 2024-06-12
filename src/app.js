@@ -1,25 +1,27 @@
-document.addEventListener('DOMContentLoaded', function() {
-    fetchPage();
-  });
-  
-  function fetchPage() {
-    const currentLocation = window.location.href;
-  
-    const entryUrl = new URL('entry.html', currentLocation);
-  
-    fetch(entryUrl)
-      .then(response => {
-        if (!response.ok) {
-          throw new Error('Network response was not ok');
-        }
-        return response.text();
-      })
-      .then(data => {
-        console.log('Content of entry.html:', data);
-        document.getElementById('entry-content').innerHTML = data;
-      })
-      .catch(error => {
-        console.error('There was a problem with the fetch operation:', error);
-      });
+document.addEventListener('DOMContentLoaded', async function() {
+  const header = document.getElementById("header");
+  const footer = document.getElementById("footer");
+
+  if (header) {
+      header.innerHTML = await fetchComponent('../header.html');
   }
-  
+
+  if (footer) {
+      footer.innerHTML = await fetchComponent('../footer.html');
+  }
+});
+
+async function fetchComponent(url) {  
+  try {
+      const response = await fetch(url);
+      if (!response.ok) {
+          throw new Error('Network response was not ok');
+      }
+      const data = await response.text();
+      console.warn(data);
+      return data;
+  } catch (error) {
+      console.error('There was a problem with the fetch operation:', error);
+      return ''; // Return an empty string or a default fallback content
+  }
+}
