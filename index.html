@@ -1,25 +1,478 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your pal to clinic managment</title>
   <link href="src/output.css" rel="stylesheet">
 </head>
 <body>
- 
+<div id="header" class="relative z-50 "></div>
 
-<div id="header"></div>
+<section class="header_area realtive z-40">
+  <div id="home" class="header_hero bg-gray-100 relative z-10 overflow-hidden lg:flex items-center">
+    <div class="hero_shape shape_1">
+      <img src="/images/shape/shape-1.svg" alt="shape">
+    </div><!-- hero shape -->
+    <div class="hero_shape shape_2">
+      <img src="/images/shape/shape-2.svg" alt="shape">
+    </div><!-- hero shape -->
+    <div class="hero_shape shape_3">
+      <img src="/images/shape/shape-3.svg" alt="shape">
+    </div><!-- hero shape -->
+    <div class="hero_shape shape_4">
+      <img src="/images/shape/shape-4.svg" alt="shape">
+    </div><!-- hero shape -->
+    <div class="hero_shape shape_6">
+      <img src="/images/shape/shape-1.svg" alt="shape">
+    </div><!-- hero shape -->
+    <div class="hero_shape shape_7">
+      <img src="/images/shape/shape-4.svg" alt="shape">
+    </div><!-- hero shape -->
+    <div class="hero_shape shape_8">
+      <img src="/images/shape/shape-3.svg" alt="shape">
+    </div><!-- hero shape -->
+    <div class="hero_shape shape_9">
+      <img src="/images/shape/shape-2.svg" alt="shape">
+    </div><!-- hero shape -->
+    <div class="hero_shape shape_10">
+      <img src="/images/shape/shape-4.svg" alt="shape">
+    </div><!-- hero shape -->
+    <div class="hero_shape shape_11">
+      <img src="/images/shape/shape-1.svg" alt="shape">
+    </div><!-- hero shape -->
+    <div class="hero_shape shape_12">
+      <img src="/images/shape/shape-2.svg" alt="shape">
+    </div><!-- hero shape -->
 
+    <div class="container">
+      <div class="row">
+        <div class="w-full lg:w-1/2">
+          <div class="header_hero_content pt-150 lg:pt-0">
+            <h2 class="hero_title text-2xl sm:text-4xl md:text-5xl lg:text-4xl xl:text-5xl font-extrabold">Interactive
+              <span class="text-theme-color">Health</span> Solutions
+            </h2>
+            <p class="mt-8 lg:mr-8">ClinyPal is your all-in-one companion for modern medical
+              practice. Engineered to streamline clinic operations. Elevate your
+              medical practice with our advanced suite of tools designed to
+              effortlessly handle scheduling, patient records, invoicing, and
+              beyond. Clinic Care empowers healthcare professionals to focus on
+              what matters most – patient care. Seamlessly navigate through
+              appointments, simplify administrative tasks, and ensure precision in
+              every detail.
+            </p>
+            <div class="hero_btn mt-10">
+              <a class="main-btn" href="#0">Get Started</a>
+            </div>
+          </div> <!-- header hero content -->
+        </div>
+      </div> <!-- row -->
+    </div> <!-- container -->
 
-<div class="flex flex-row">
-  <div class="w-1/2">
-    <img src="images/coverlogo.jpeg"/>
+    <div class="header_shape hidden lg:block"></div>
+
+    <div class="header_image flex items-center">
+      <div class="image 2xl:pl-25">
+        <img src="/images/header-image.svg" alt="Header Image">
+      </div>
+    </div> <!-- header image -->
+  </div> <!-- header hero -->
+</section>
+
+<section class="services_area pt-120" id="about">
+  <div class="container">
+      <div class="row justify-center">
+          <div class="w-full lg:w-1/2">
+              <div class="section_title text-center pb-6">
+                  <h5 class="sub_title">About</h5>
+                  <h4 class="main_title">Empowering Healthcare with EHR, Telehealth, and DICOM Viewer</h4>
+              </div> <!-- section title -->
+          </div>
+      </div> <!-- row -->
+      <div class="row justify-center">
+        <div class="w-full sm:w-10/12 md:w-6/12 lg:w-4/12 flex">
+            <div class="single_services text-center mt-8 mx-3">
+                <div class="services_icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="94" height="92" viewBox="0 0 94 92">
+                        <path class="services_shape" id="Polygon_12" data-name="Polygon 12" d="M42.212,2.315a11,11,0,0,1,9.576,0l28.138,13.6a11,11,0,0,1,5.938,7.465L92.83,54.018A11,11,0,0,1,90.717,63.3L71.22,87.842A11,11,0,0,1,62.607,92H31.393a11,11,0,0,1-8.613-4.158L3.283,63.3A11,11,0,0,1,1.17,54.018L8.136,23.383a11,11,0,0,1,5.938-7.465Z" />
+                        <image href="/images/ehricon.png" x="0" y="0" height="96" width="96"/>
+                    </svg>
+                </div>
+                <div class="services_content mt-5">
+                    <h3 class="services_title text-[#38424D] font-semibold text-xl md:text-3xl">EHR</h3>
+                    <p class="mt-4">ClinyPal simplifies patient record management with intuitive EHR functionalities, ensuring comprehensive and organized healthcare data. </p>
+                </div>
+            </div> <!-- single services -->
+        </div>
+        <div class="w-full sm:w-10/12 md:w-6/12 lg:w-4/12 flex">
+          <div class="single_services text-center mt-8 mx-3">
+              <div class="services_icon inline-block">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="94" height="92" viewBox="0 0 94 92">
+                      <path class="services_shape" id="Polygon_12" data-name="Polygon 12" d="M42.212,2.315a11,11,0,0,1,9.576,0l28.138,13.6a11,11,0,0,1,5.938,7.465L92.83,54.018A11,11,0,0,1,90.717,63.3L71.22,87.842A11,11,0,0,1,62.607,92H31.393a11,11,0,0,1-8.613-4.158L3.283,63.3A11,11,0,0,1,1.17,54.018L8.136,23.383a11,11,0,0,1,5.938-7.465Z" />
+                      <image href="/images/telehealthicon.png" x="23" y="22" height="48" width="48"/>
+                  </svg>
+              </div>
+              <div class="services_content mt-5">
+                  <h3 class="services_title text-[#38424D] font-semibold text-xl md:text-3xl">Telehealth</h3>
+                  <p class="mt-4">Our platform facilitates secure and convenient virtual consultations, enabling healthcare providers to connect with patients remotely for timely and accessible care. </p>
+              </div>
+          </div> <!-- single services -->
+      </div>
+      <div class="w-full sm:w-10/12 md:w-6/12 lg:w-4/12 flex">
+        <div class="single_services text-center mt-8 mx-3">
+            <div class="services_icon">
+                <i class="lni lni-checkmark-circle"></i>                <svg xmlns="http://www.w3.org/2000/svg" width="94" height="92" viewBox="0 0 94 92">
+                    <path class="services_shape" id="Polygon_12" data-name="Polygon 12" d="M42.212,2.315a11,11,0,0,1,9.576,0l28.138,13.6a11,11,0,0,1,5.938,7.465L92.83,54.018A11,11,0,0,1,90.717,63.3L71.22,87.842A11,11,0,0,1,62.607,92H31.393a11,11,0,0,1-8.613-4.158L3.283,63.3A11,11,0,0,1,1.17,54.018L8.136,23.383a11,11,0,0,1,5.938-7.465Z" />
+                    <image href="/images/viewer.png" x="15" y="14" height="64" width="64"/>
+                </svg>
+            </div>
+            <div class="services_content mt-5">
+                <h3 class="services_title text-[#38424D] font-semibold text-xl md:text-3xl">Viewer</h3>
+                <p class="mt-4">ClinyPal's DICOM and Image Viewer seamlessly integrates medical imaging data, providing healthcare professionals with clear and efficient diagnostic insights directly within the platform.</p>
+            </div>
+        </div> <!-- single services -->
+    </div>
+</div> <!-- row -->
+</div> <!-- container -->
+</section>
+
+<section id="why" class="about_area pt-120 relative">
+  <div class="about_image flex items-end justify-end">
+      <div class="image lg:pr-13">
+          <img src="/images/about.svg" alt="about">
+      </div>
+  </div> <!-- about image -->
+  <div class="container">
+      <div class="row justify-end">
+          <div class="w-full lg:w-1/2">
+              <div class="about_content mx-4 pt-11 lg:pt-15 lg:pb-15">
+                  <div class="section_title pb-9">
+                      <h5 class="sub_title">Your Compassionate Solution</h5>
+                      <h4 class="main_title">Simplifying Medical Practice for Enhanced Care</h4>
+                  </div> <!-- section title -->
+                  <p>Optimize your clinic operations with our feature-rich medical software, designed to elevate your medical practice to new heights. Our comprehensive medical software empowers clinics with seamless integration and user-friendly tools. </p>
+                  <ul class="about_list pt-3">
+                      <li class="flex mt-5">
+                          <div class="about_check">
+                              <i class="lni lni-checkmark-circle"></i>
+                          </div>
+                          <div class="about_list_content pl-5 pr-2">
+                              <p>Our platform seamlessly integrates comprehensive appointment scheduling, streamlined patient record management, and effortless billing solutions.</p>
+                          </div>
+                      </li>
+                      <li class="flex mt-5">
+                          <div class="about_check">
+                              <i class="lni lni-checkmark-circle"></i>
+                          </div>
+                          <div class="about_list_content pl-5 pr-2">
+                              <p>Transform your practice with precision and efficiency, ensuring every aspect is managed seamlessly.</p>
+                          </div>
+                      </li>
+                      <li class="flex mt-5">
+                          <div class="about_check">
+                              <i class="lni lni-checkmark-circle"></i>
+                          </div>
+                          <div class="about_list_content pl-5 pr-2">
+                              <p>Prioritize exceptional patient care with our state-of-the-art medical clinic software, designed to enhance your clinic's productivity and patient satisfaction.</p>
+                          </div>
+                      </li>
+                  </ul>
+              </div> <!-- about content -->
+          </div>
+      </div> <!-- row -->
+  </div> <!-- container -->
+</section>
+
+<section id="services" class="services_area pt-120 pb-120">
+  <div class="container">
+      <div class="row justify-center">
+          <div class="w-full lg:w-1/2">
+              <div class="section_title text-center pb-6">
+                  <h5 class="sub_title">Navigating Your Clinic App with Ease</h5>
+                  <h4 class="main_title">Comprehensive Guide to Unlimited Free Support</h4>
+              </div>
+          </div>
+      </div>
+      <div class="row justify-center">
+          <div class="w-full sm:w-10/12 md:w-6/12 lg:w-4/12 flex">
+              <div class="single_services text-center mt-8 mx-3">
+                  <div class="services_icon">
+                      <i class="lni lni-layout"></i>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="94" height="92" viewBox="0 0 94 92">
+                          <path class="services_shape" d="M42.212,2.315a11,11,0,0,1,9.576,0l28.138,13.6a11,11,0,0,1,5.938,7.465L92.83,54.018A11,11,0,0,1,90.717,63.3L71.22,87.842A11,11,0,0,1,62.607,92H31.393a11,11,0,0,1-8.613-4.158L3.283,63.3A11,11,0,0,1,1.17,54.018L8.136,23.383a11,11,0,0,1,5.938-7.465Z" />
+                      </svg>
+                  </div>
+                  <div class="services_content mt-5 xl:mt-10">
+                      <h3 class="services_title text-[#38424D] font-semibold text-xl md:text-2xl lg:text-xl xl:text-3xl">Unwavering Support and Community</h3>
+                      <p class="mt-4">Experience round-the-clock assistance through free online chat and email, ensuring you have help whenever you need it. Join our active support forum to share valuable insights and grow alongside other healthcare professionals.</p>
+                  </div>
+              </div>
+          </div>
+
+          <div class="w-full sm:w-10/12 md:w-6/12 lg:w-4/12 flex">
+              <div class="single_services text-center mt-8 mx-3">
+                  <div class="services_icon">
+                      <i class="lni lni-bullhorn"></i>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="94" height="92" viewBox="0 0 94 92">
+                          <path class="services_shape" d="M42.212,2.315a11,11,0,0,1,9.576,0l28.138,13.6a11,11,0,0,1,5.938,7.465L92.83,54.018A11,11,0,0,1,90.717,63.3L71.22,87.842A11,11,0,0,1,62.607,92H31.393a11,11,0,0,1-8.613-4.158L3.283,63.3A11,11,0,0,1,1.17,54.018L8.136,23.383a11,11,0,0,1,5.938-7.465Z" />
+                      </svg>
+                  </div>
+                  <div class="services_content mt-5 xl:mt-10">
+                      <h3 class="services_title text-[#38424D] font-semibold text-xl md:text-2xl lg:text-xl xl:text-3xl">Cost-Effective Solutions</h3>
+                      <p class="mt-4">Optimizing clinic operations without breaking the bank, with affordable pricing plans designed to fit clinics of all sizes.</p>
+                  </div>
+              </div>
+          </div>
+
+          <div class="w-full sm:w-10/12 md:w-6/12 lg:w-4/12 flex">
+              <div class="single_services text-center mt-8 mx-3">
+                  <div class="services_icon">
+                      <i class=" lni lni-mobile"></i>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="94" height="92" viewBox="0 0 94 92">
+                          <path class="transition-all duration-300 fill-[#fff1f1] " d="M42.212,2.315a11,11,0,0,1,9.576,0l28.138,13.6a11,11,0,0,1,5.938,7.465L92.83,54.018A11,11,0,0,1,90.717,63.3L71.22,87.842A11,11,0,0,1,62.607,92H31.393a11,11,0,0,1-8.613-4.158L3.283,63.3A11,11,0,0,1,1.17,54.018L8.136,23.383a11,11,0,0,1,5.938-7.465Z" />
+                      </svg>
+                  </div>
+                  <div class="services_content mt-5 xl:mt-10">
+                      <h3 class="services_title text-[#38424D] font-semibold text-xl md:text-2xl lg:text-xl xl:text-3xl">User-Friendly Interface</h3>
+                      <p class="mt-4">Allows for easy navigation, reducing the time spent on training and increasing the time available for patient care. Additionally, the platform offers customizable solutions, enabling you to tailor the system to fit your clinic’s unique needs with flexible settings and features that adapt to various specialties and workflows.</p>
+                  </div>
+              </div>
+          </div>
+
+          <div class="w-full sm:w-10/12 md:w-6/12 lg:w-4/12 flex">
+              <div class="single_services text-center mt-8 mx-3">
+                  <div class="services_icon">
+                      <i class="lni lni-seo"></i>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="94" height="92" viewBox="0 0 94 92">
+                          <path class="services_shape" d="M42.212,2.315a11,11,0,0,1,9.576,0l28.138,13.6a11,11,0,0,1,5.938,7.465L92.83,54.018A11,11,0,0,1,90.717,63.3L71.22,87.842A11,11,0,0,1,62.607,92H31.393a11,11,0,0,1-8.613-4.158L3.283,63.3A11,11,0,0,1,1.17,54.018L8.136,23.383a11,11,0,0,1,5.938-7.465Z" />
+                      </svg>
+                  </div>
+                  <div class="services_content mt-5 xl:mt-10">
+                      <h3 class="services_title text-[#38424D] font-semibold text-xl md:text-2xl lg:text-xl xl:text-3xl">Data Security and Privacy</h3>
+                      <p class="mt-4">ClinyPal ensures patient data is protected with top-tier security measures, complying with industry standards and regulations for data privacy. The platform also supports seamless integration with existing systems, enhancing functionality without disrupting your current workflows.</p>
+                  </div>
+              </div>
+          </div>
+
+          <div class="w-full sm:w-10/12 md:w-6/12 lg:w-4/12 flex">
+              <div class="single_services text-center mt-8 mx-3">
+                  <div class="services_icon">
+                      <i class="lni lni-cogs"></i>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="94" height="92" viewBox="0 0 94 92">
+                          <path class="services_shape" d="M42.212,2.315a11,11,0,0,1,9.576,0l28.138,13.6a11,11,0,0,1,5.938,7.465L92.83,54.018A11,11,0,0,1,90.717,63.3L71.22,87.842A11,11,0,0,1,62.607,92H31.393a11,11,0,0,1-8.613-4.158L3.283,63.3A11,11,0,0,1,1.17,54.018L8.136,23.383a11,11,0,0,1,5.938-7.465Z" />
+                      </svg>
+                  </div>
+                  <div class="services_content mt-5 xl:mt-10">
+                      <h3 class="services_title text-[#38424D] font-semibold text-xl md:text-2xl lg:text-xl xl:text-3xl">Comprehensive Analytics and Reporting</h3>
+                      <p class="mt-4">Allow you to access detailed data, track performance, identify trends, and make informed decisions to improve practice efficiency.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="w-full sm:w-10/12 md:w-6/12 lg:w-4/12 flex">
+            <div class="single_services text-center mt-8 mx-3">
+              <div class="relative inline-block">
+                    <i class="lni lni-briefcase"></i>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="94" height="92" viewBox="0 0 94 92">
+                        <path class="services_shape" id="Polygon_12" data-name="Polygon 12" d="M42.212,2.315a11,11,0,0,1,9.576,0l28.138,13.6a11,11,0,0,1,5.938,7.465L92.83,54.018A11,11,0,0,1,90.717,63.3L71.22,87.842A11,11,0,0,1,62.607,92H31.393a11,11,0,0,1-8.613-4.158L3.283,63.3A11,11,0,0,1,1.17,54.018L8.136,23.383a11,11,0,0,1,5.938-7.465Z" />
+                    </svg>
+                </div>
+                <div class="services_content mt-5 xl:mt-10">
+                    <h3 class="services_title text-[#38424D] font-semibold text-xl md:text-2xl lg:text-xl xl:text-3xl">patient engagement tools</h3>
+                    <p class="mt-4">Enhance communication with patients through secure messaging and reminders, ultimately improving patient satisfaction and retention. The platform’s mobile accessibility allows you to manage your clinic on the go, providing care from anywhere at any time using your mobile device. </p>
+                </div>
+            </div>
+          </div>
+      </div>
   </div>
-  <div class="w-1/2 p-2 bg-gradient-to-r from-white via-violet-200 to-fuchsia-300">
-    <h1 class="my-4 text-6xl font-sans text-pink-950 font-bold leading-tight">
-      Serenity Solutions for Holistic Care
+</section>
+
+
+
+
+<section id="pricing" class="pricing_area pt-120 pb-120">
+  <div class="container">
+      <div class="row justify-center">
+          <div class="w-full lg:w-1/2">
+              <div class="section_title text-center pb-6">
+                  <h5 class="sub_title">Trustworthy and Affordable Solutions</h5>
+                  <h4 class="main_title">Simplify Your Practice: Free 60-Day Trial and Clear Pricing Plans</h4>
+              </div> <!-- section title -->
+          </div>
+      </div> <!-- row -->
+      <div class="row">
+          <div class="w-full">
+              <div class="pricing_menu mt-8 pb-8">
+                  <ul class="flex justify-center">
+                      <li class="nav-item">
+                          <button class="active bg-[#FBFBFF] text-body-color py-3 px-8 rounded-tl-full rounded-bl-full" data-tab-target="#monthlyPlan">Monthly</button>
+                      </li>
+                      <li class="nav-item">
+                          <button class="bg-[#FBFBFF] text-body-color py-3 px-8 rounded-tr-full rounded-br-full" data-tab-target="#yearlyPlan">Yearly</button>
+                      </li>
+                  </ul>
+              </div> <!-- pricing menu -->
+              
+              <div class="pricing_content mt-6_area">
+                  <div class="tab-content">
+                      <div class="active tab-pane" id="monthlyPlan" data-tab-content>
+                          <div class="row justify-center">
+                              <div class="w-full sm:w-9/12 md:w-7/12 lg:w-4/12">
+                                  <div class="single_pricing text-center mt-8 mx-3">
+                                      <div class="pricing_title relative inline-block">
+                                          <h4 class="title group-hover:text-white">Basic</h4>
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="112" height="110" viewBox="0 0 112 110">
+                                              <path class="services_shape" id="Polygon_15" data-name="Polygon 15" d="M51.2,2.329a11,11,0,0,1,9.6,0L96.15,19.478a11,11,0,0,1,5.927,7.466l8.76,38.665a11,11,0,0,1-2.1,9.258l-24.508,30.96A11,11,0,0,1,75.6,110H36.4a11,11,0,0,1-8.625-4.173L3.266,74.867a11,11,0,0,1-2.1-9.258l8.76-38.665a11,11,0,0,1,5.927-7.466Z" fill="#f94f4f"/>
+                                          </svg>
+                                      </div>
+                                      <div class="pricing_content mt-6">
+                                          <span class="pricing_price font-bold text-[#38424D] text-4xl">$19.00</span>
+                                          <p class="mt-4 leading-9">Lorem ipsum dolor sit am consetetur sadi aliquyam erat sed diam voluptua vero eos  accusam et justo duo dolores </p>
+                                          <a href="" class="main-btn pricing_btn">Choose Plan</a>
+                                      </div>
+                                  </div>  <!-- single pricing -->
+                              </div>
+                              
+                              <div class="w-full sm:w-9/12 md:w-7/12 lg:w-4/12">
+                                  <div class="single_pricing text-center mt-8 mx-3 bg-gradient-to-r from-indigo-600 to-violet-600 active">
+                                      <div class="pricing_title relative inline-block">
+                                          <h4 class="title group-hover:text-white">Standard</h4>
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="112" height="110" viewBox="0 0 112 110">
+                                              <path class="services_shape" id="Polygon_15" data-name="Polygon 15" d="M51.2,2.329a11,11,0,0,1,9.6,0L96.15,19.478a11,11,0,0,1,5.927,7.466l8.76,38.665a11,11,0,0,1-2.1,9.258l-24.508,30.96A11,11,0,0,1,75.6,110H36.4a11,11,0,0,1-8.625-4.173L3.266,74.867a11,11,0,0,1-2.1-9.258l8.76-38.665a11,11,0,0,1,5.927-7.466Z" fill="#f94f4f"/>
+                                          </svg>
+                                      </div>
+                                      <div class="pricing_content mt-6">
+                                          <span class="pricing_price font-bold text-[#38424D] text-4xl">$39.00</span>
+                                          <p class="mt-4 leading-9">Lorem ipsum dolor sit am consetetur sadi aliquyam erat sed diam voluptua vero eos  accusam et justo duo dolores </p>
+                                          <a href="" class="main-btn pricing_btn">Choose Plan</a>
+                                      </div>
+                                  </div>  <!-- single pricing -->
+                              </div>
+                              
+                              <div class="w-full sm:w-9/12 md:w-7/12 lg:w-4/12">
+                                  <div class="single_pricing text-center mt-8 mx-3">
+                                      <div class="pricing_title relative inline-block">
+                                          <h4 class="title group-hover:text-white">Premium</h4>
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="112" height="110" viewBox="0 0 112 110">
+                                              <path class="services_shape" id="Polygon_15" data-name="Polygon 15" d="M51.2,2.329a11,11,0,0,1,9.6,0L96.15,19.478a11,11,0,0,1,5.927,7.466l8.76,38.665a11,11,0,0,1-2.1,9.258l-24.508,30.96A11,11,0,0,1,75.6,110H36.4a11,11,0,0,1-8.625-4.173L3.266,74.867a11,11,0,0,1-2.1-9.258l8.76-38.665a11,11,0,0,1,5.927-7.466Z" fill="#f94f4f"/>
+                                          </svg>
+                                      </div>
+                                      <div class="pricing_content mt-6">
+                                          <span class="pricing_price font-bold text-[#38424D] text-4xl">$99.00</span>
+                                          <p class="mt-4 leading-9">Lorem ipsum dolor sit am consetetur sadi aliquyam erat sed diam voluptua vero eos  accusam et justo duo dolores </p>
+                                          <a href="" class="main-btn pricing_btn">Choose Plan</a>
+                                      </div>
+                                  </div>  <!-- single pricing -->
+                              </div>
+                          </div> <!-- row -->
+                      </div>
+                      <div class="tab-pane" id="yearlyPlan" data-tab-content>
+                          <div class="row justify-center">
+                              <div class="w-full sm:w-9/12 md:w-7/12 lg:w-4/12">
+                                  <div class="single_pricing text-center mt-8 mx-3">
+                                      <div class="pricing_title relative inline-block">
+                                          <h4 class="title group-hover:text-white">Basic</h4>
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="112" height="110" viewBox="0 0 112 110">
+                                              <path class="services_shape" id="Polygon_15" data-name="Polygon 15" d="M51.2,2.329a11,11,0,0,1,9.6,0L96.15,19.478a11,11,0,0,1,5.927,7.466l8.76,38.665a11,11,0,0,1-2.1,9.258l-24.508,30.96A11,11,0,0,1,75.6,110H36.4a11,11,0,0,1-8.625-4.173L3.266,74.867a11,11,0,0,1-2.1-9.258l8.76-38.665a11,11,0,0,1,5.927-7.466Z" fill="#f94f4f"/>
+                                          </svg>
+                                      </div>
+                                      <div class="pricing_content mt-6">
+                                          <span class="pricing_price font-bold text-[#38424D] text-4xl">$99.00</span>
+                                          <p class="mt-4 leading-9">Lorem ipsum dolor sit am consetetur sadi aliquyam erat sed diam voluptua vero eos  accusam et justo duo dolores </p>
+                                          <a href="" class="main-btn pricing_btn">Choose Plan</a>
+                                      </div>
+                                  </div>  <!-- single pricing -->
+                              </div>
+                              
+                              <div class="w-full sm:w-9/12 md:w-7/12 lg:w-4/12">
+                                  <div class="single_pricing text-center mt-8 mx-3 active">
+                                      <div class="pricing_title relative inline-block">
+                                          <h4 class="title group-hover:text-white">Standard</h4>
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="112" height="110" viewBox="0 0 112 110">
+                                              <path class="services_shape" id="Polygon_15" data-name="Polygon 15" d="M51.2,2.329a11,11,0,0,1,9.6,0L96.15,19.478a11,11,0,0,1,5.927,7.466l8.76,38.665a11,11,0,0,1-2.1,9.258l-24.508,30.96A11,11,0,0,1,75.6,110H36.4a11,11,0,0,1-8.625-4.173L3.266,74.867a11,11,0,0,1-2.1-9.258l8.76-38.665a11,11,0,0,1,5.927-7.466Z" fill="#f94f4f"/>
+                                          </svg>
+                                      </div>
+                                      <div class="pricing_content mt-6">
+                                          <span class="pricing_price font-bold text-[#38424D] text-4xl">$199.00</span>
+                                          <p class="mt-4 leading-9">Lorem ipsum dolor sit am consetetur sadi aliquyam erat sed diam voluptua vero eos  accusam et justo duo dolores </p>
+                                          <a href="" class="main-btn pricing_btn">Choose Plan</a>
+                                      </div>
+                                  </div>  <!-- single pricing -->
+                              </div>
+                              
+                              <div class="w-full sm:w-9/12 md:w-7/12 lg:w-4/12">
+                                  <div class="single_pricing text-center mt-8 mx-3">
+                                      <div class="pricing_title relative inline-block">
+                                          <h4 class="title group-hover:text-white">Premium</h4>
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="112" height="110" viewBox="0 0 112 110">
+                                              <path class="services_shape" id="Polygon_15" data-name="Polygon 15" d="M51.2,2.329a11,11,0,0,1,9.6,0L96.15,19.478a11,11,0,0,1,5.927,7.466l8.76,38.665a11,11,0,0,1-2.1,9.258l-24.508,30.96A11,11,0,0,1,75.6,110H36.4a11,11,0,0,1-8.625-4.173L3.266,74.867a11,11,0,0,1-2.1-9.258l8.76-38.665a11,11,0,0,1,5.927-7.466Z" fill="#f94f4f"/>
+                                          </svg>
+                                      </div>
+                                      <div class="pricing_content mt-6">
+                                          <span class="pricing_price font-bold text-[#38424D] text-4xl">$499.00</span>
+                                          <p class="mt-4 leading-9">Lorem ipsum dolor sit am consetetur sadi aliquyam erat sed diam voluptua vero eos  accusam et justo duo dolores </p>
+                                          <a href="" class="main-btn pricing_btn">Choose Plan</a>
+                                      </div>
+                                  </div>  <!-- single pricing -->
+                              </div>
+                          </div> <!-- row -->
+                      </div>
+                  </div>
+              </div> <!-- pricing menu -->
+          </div>
+      </div> <!-- row -->
+  </div> <!-- container -->
+</section>
+
+
+<section id="team" class="team_area bg-gray pt-120 pb-120">
+  <div class="container">
+      <div class="row justify-center">
+          <div class="w-full lg:w-1/2">
+              <div class="section_title text-center pb-6">
+                  <h5 class="sub_title">Explore</h5>
+                  <h4 class="main_title">Try for Free, No Commitment</h4>
+              </div> <!-- section title -->
+          </div>
+      </div> <!-- row -->
+      <div class="team-wrapper flex relative ">
+          <div class="flex-col team_active">
+              <div class="w-full items-center">
+                  <div class=" mx-auto">
+                      <div class="py-20 max-w-lg mx-3">
+                          <div class="team_content py-5 px-8 relative">
+                              <p class="text-xl"><a href="#" class="text-[#38424D] group-hover:text-white">Unlock the full potential of ClinyPal with no cost during your<span class="font-bold text-theme-color"> 60-day trial</span>. You pay only if you choose to continue your subscription after the trial ends. ClinyPal is a complete practice management system designed to streamline your practice and enhance patient care. During your trial period, experience robust reporting tools and unparalleled support. Discover why ClinyPal is the right choice for your practice.</a></p>
+                          </div>
+                      </div>
+                  </div> <!-- single team -->
+              </div>
+                      <div class="pt-2 text-center items-center w-full">
+                        <a class="max-auto lg:mx-0 bg-theme-color text-white font-sans font-bold text-2xl border-2 border-th my-6 py-4 px-8 border-solid hover:bg-white hover:text-rose-700">
+                          Start your trial period 
+                        </a>
+                      </div>
+              </div>
+              <div class="team_image relative w-1/2 ml-10">
+                <img src="/images/tryitforfree.jpg" alt="team" class="w-full">                        
+            </div>
+          </div> <!-- row -->
+      </div>
+  </div> <!-- container -->
+</section>
+
+<!--
+
+
+<div class="container mx-auto flex md:px-24 md:py-10 md:flex-row flex-col items-center">
+  <div class="lg:max-w-lg lg:w-full mb-5 md:mb-0 md:w-1/2 w-3/6">
+    <img class="object-cover object-center rounded" alt="hero" src="https://www.svgrepo.com/show/490900/hot-air-balloon.svg"-->
+    <!--img src="images/coverlogo.jpeg"/-->
+  <!--/div>
+  <div class="w-1/2 p-2 ">
+    <h1 class="my-4 lg:text-5xl xl:text-6xl font-sans text-pink-950 font-bold leading-tight sm:text-4xl md:text-5xl md:leading-normal">
+      Integrative Health Solutions
     </h1>
-    <p class="leading-normal font-sans text-2xl mb-16">
+    <p class="leading-normal font-sans text-2xl mb-16 md:pl-0  pl-2 pr-2">
       Clinic Care is your all-in-one companion for modern medical
       practice. Engineered to streamline clinic operations. Elevate your
       medical practice with our advanced suite of tools designed to
@@ -29,9 +482,13 @@
       appointments, simplify administrative tasks, and ensure precision in
       every detail.
     </p>
+    
   </div>
 
 </div>
+
+
+-->
 
 <div id="footer"></div>
 
