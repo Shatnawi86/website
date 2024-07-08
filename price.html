@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Carousel</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+         .pricing-card {
+        transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    }
+    .inactive {
+        transform: scale(0.8);
+        opacity: 0.5;
+    }
+    .active {
+        transform: scale(1);
+        opacity: 1;
+    }
+    </style>
+</head>
+<body class="bg-gray-100 flex flex-col items-center justify-center min-h-screen">
+
+    <div class="relative w-full">
+        <div id="pricing-container" class="flex items-center justify-center overflow-hidden">
+            <!-- Pricing Cards for Monthly -->
+            <div class="pricing-card monthly active flex-shrink-0 w-64 h-64 flex flex-col items-center justify-center bg-white shadow-lg m-4">
+                <h3 class="text-xl font-bold">Monthly Plan 1</h3>
+                <p class="text-2xl">$10</p>
+            </div>
+            <div class="pricing-card monthly inactive flex-shrink-0 w-64 h-64 flex flex-col items-center justify-center bg-white shadow-lg m-4">
+                <h3 class="text-xl font-bold">Monthly Plan 2</h3>
+                <p class="text-2xl">$20</p>
+            </div>
+            <!-- Add more monthly plans here -->
+    
+            <!-- Pricing Cards for Yearly (hidden by default) -->
+            <div class="pricing-card yearly hidden flex-shrink-0 w-64 h-64 flex flex-col items-center justify-center bg-white shadow-lg m-4">
+                <h3 class="text-xl font-bold">Yearly Plan 1</h3>
+                <p class="text-2xl">$100</p>
+            </div>
+            <div class="pricing-card yearly hidden flex-shrink-0 w-64 h-64 flex flex-col items-center justify-center bg-white shadow-lg m-4">
+                <h3 class="text-xl font-bold">Yearly Plan 2</h3>
+                <p class="text-2xl">$200</p>
+            </div>
+            <!-- Add more yearly plans here -->
+        </div>
+        <button id="prev-btn" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-300 hover:bg-gray-400 text-white font-bold py-2 px-4 rounded-full">
+            &lt;
+        </button>
+        <button id="next-btn" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-300 hover:bg-gray-400 text-white font-bold py-2 px-4 rounded-full">
+            &gt;
+        </button>
+    </div>
+    
+    <!-- Buttons to switch between Monthly and Yearly -->
+    <div class="flex justify-center mt-4">
+        <button id="monthly-btn" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Monthly</button>
+        <button id="yearly-btn" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ml-2">Yearly</button>
+    </div>
+    
+
+<script>
+   const pricingCards = document.querySelectorAll('.pricing-card');
+let currentIndex = 0;
+
+document.getElementById('prev-btn').addEventListener('click', () => {
+    pricingCards[currentIndex].classList.remove('active');
+    pricingCards[currentIndex].classList.add('inactive');
+    currentIndex = (currentIndex - 1 + pricingCards.length) % pricingCards.length;
+    pricingCards[currentIndex].classList.remove('inactive');
+    pricingCards[currentIndex].classList.add('active');
+});
+
+document.getElementById('next-btn').addEventListener('click', () => {
+    pricingCards[currentIndex].classList.remove('active');
+    pricingCards[currentIndex].classList.add('inactive');
+    currentIndex = (currentIndex + 1) % pricingCards.length;
+    pricingCards[currentIndex].classList.remove('inactive');
+    pricingCards[currentIndex].classList.add('active');
+});
+
+document.getElementById('monthly-btn').addEventListener('click', () => {
+    document.querySelectorAll('.monthly').forEach(card => card.classList.remove('hidden'));
+    document.querySelectorAll('.yearly').forEach(card => card.classList.add('hidden'));
+    resetActiveState();
+});
+
+document.getElementById('yearly-btn').addEventListener('click', () => {
+    document.querySelectorAll('.yearly').forEach(card => card.classList.remove('hidden'));
+    document.querySelectorAll('.monthly').forEach(card => card.classList.add('hidden'));
+    resetActiveState();
+});
+
+function resetActiveState() {
+    pricingCards.forEach(card => {
+        card.classList.remove('active', 'inactive');
+        card.classList.add('inactive');
+    });
+    currentIndex = 0;
+    pricingCards[currentIndex].classList.remove('inactive');
+    pricingCards[currentIndex].classList.add('active');
+}
+
+resetActiveState();
+
+</script>
+
+</body>
+</html>

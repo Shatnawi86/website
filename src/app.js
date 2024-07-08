@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', async function() {
         footer.innerHTML = await fetchComponent('./footer.html');
     }
   
-    const tabs = document.querySelectorAll('[data-tab-target]');
+    const tabs = document.querySelectorAll('[data-tab-target]')
     const tabContents = document.querySelectorAll('[data-tab-content]');
     
     tabs.forEach(tab => {
@@ -24,8 +24,11 @@ document.addEventListener('DOMContentLoaded', async function() {
         });
         tab.classList.add('active');
         target.classList.add('active');
-      });
+      })
     });
+
+
+
   
     const mobileMenuButton = document.getElementById('mobile-menu-button');
     const mobileMenu = document.getElementById('mobile-menu');
@@ -79,4 +82,6 @@ document.addEventListener('DOMContentLoaded', async function() {
         return ''; 
     }
   }
+  
+  
   
