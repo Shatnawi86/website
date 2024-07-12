@@ -27,46 +27,51 @@ document.addEventListener('DOMContentLoaded', async function() {
       })
     });
 
+    const megaMenuButton = document.getElementById('mega-menu-icons-dropdown-button');
+    const megaMenu = document.getElementById('mega-menu-icons-dropdown');
 
+    const languageButton = document.getElementById('language-dropdown-button');
+    const languagemegaMenu = document.getElementById('language-icons-dropdown');
 
-  
-    const mobileMenuButton = document.getElementById('mobile-menu-button');
-    const mobileMenu = document.getElementById('mobile-menu');
-    const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
-  
-    // Hamburger menu
-    if (mobileMenuButton) {
-      mobileMenuButton.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
-      });
-    }
-  
-    // Dropdown mobile
-    dropdownToggles.forEach((toggle) => {
-      toggle.addEventListener('click', (event) => {
-        event.stopPropagation();
-        const dropdown = toggle.nextElementSibling;
-        const otherDropdowns = document.querySelectorAll('.dropdown');
-  
-        otherDropdowns.forEach((d) => {
-          if (d !== dropdown) {
-            d.classList.add('hidden');
-          }
-        });
-  
-        dropdown.classList.toggle('hidden');
-        toggle.querySelector('svg').classList.toggle('rotate-180');
-      });
+    megaMenuButton.addEventListener('click', () => {
+        // Toggle the visibility of the mega menu
+        if (megaMenu.classList.contains('hidden')) {
+            megaMenu.classList.remove('hidden', 'opacity-0');
+            megaMenu.classList.add('block', 'opacity-100');
+        } else {
+            megaMenu.classList.remove('block', 'opacity-100');
+            megaMenu.classList.add('hidden', 'opacity-0');
+        }
     });
-  
-    window.addEventListener('click', (event) => {
-      if (!event.target.matches('.dropdown-toggle') && !event.target.closest('.dropdown')) {
-        dropdownToggles.forEach((toggle) => {
-          toggle.nextElementSibling.classList.add('hidden');
-          toggle.querySelector('svg').classList.remove('rotate-180');
-        });
+
+
+    languageButton.addEventListener('click', () => {
+      // Toggle the visibility of the mega menu
+      if (languagemegaMenu.classList.contains('hidden')) {
+        languagemegaMenu.classList.remove('hidden', 'opacity-0');
+        languagemegaMenu.classList.add('block', 'opacity-100');
+      } else {
+        languagemegaMenu.classList.remove('block', 'opacity-100');
+        languagemegaMenu.classList.add('hidden', 'opacity-0');
       }
     });
+    
+    // Optional: Close the mega menu if clicked outside
+    document.addEventListener('click', (event) => {
+        if (!megaMenuButton.contains(event.target) && !megaMenu.contains(event.target)) {
+            megaMenu.classList.remove('block', 'opacity-100');
+            megaMenu.classList.add('hidden', 'opacity-0');
+        }
+    });
+
+    document.addEventListener('click', (event) => {
+      if (!languageButton.contains(event.target) && !languagemegaMenu.contains(event.target)) {
+        languagemegaMenu.classList.remove('block', 'opacity-100');
+        languagemegaMenu.classList.add('hidden', 'opacity-0');
+      }
+  });
+
+
   });
   
   async function fetchComponent(url) {  
@@ -82,6 +87,5 @@ document.addEventListener('DOMContentLoaded', async function() {
         return ''; 
     }
   }
-  
   
   
